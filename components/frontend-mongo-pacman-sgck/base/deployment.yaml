@@ -25,7 +25,7 @@ spec:
       containers:
       - env:
         - name: MONGO_SERVICE_HOST
-        image: pacman
+        image: quay.io/redhat-user-workloads-stage/ysubrama-tenant/mongo-pacman-1/frontend-mongo-pacman-sgck@sha256:6fa2b282b89f3f26d10e5e405d516a63d1f3f36817d7a5119f7daf7a1b9725ec
         imagePullPolicy: Always
         name: front-end
         ports:
