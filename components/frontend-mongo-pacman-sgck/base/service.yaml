@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: frontend-mongo-pacman-sgck
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: frontend-mongo-pacman-sgck
+    app.kubernetes.io/part-of: mongo-pacman-1
+  name: frontend-mongo-pacman-sgck
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/instance: frontend-mongo-pacman-sgck
+status:
+  loadBalancer: {}
