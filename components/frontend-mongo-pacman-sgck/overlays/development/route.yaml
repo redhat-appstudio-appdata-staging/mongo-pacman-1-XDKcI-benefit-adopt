@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: frontend-mongo-pacman-sgck
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: frontend-mongo-pacman-sgck
+    app.kubernetes.io/part-of: mongo-pacman-1
+  name: frontend-mongo-pacman-sgcvpxh
+spec:
+  path: /
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: frontend-mongo-pacman-sgck
+    weight: null
+status: {}
